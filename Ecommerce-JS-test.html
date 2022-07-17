@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce-JS-test</title>
+</head>
+<style>
+   header{
+        margin: 0 1rem 3rem 0;
+        width: 100%;
+        height: 5%;
+        position: fixed;
+        border-bottom: 2px solid black;
+    }
+    #bella {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-variant: small-caps;
+        font-weight: 600;
+        text-shadow: 0 1px;
+        margin-right: 30px;
+        line-height: 15px;
+    }
+    #link {
+        text-decoration-line: none;
+        color: rgb(172, 17, 180);
+        margin-right: 5px;
+        line-height: 15px;
+    }
+    #link2 {
+        text-decoration-line: none;
+        color: rgb(101, 17, 180);
+        float: right;
+        margin-right: 30px;
+        line-height: 15px;
+    }
+    .card{
+        top: 80px;
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .main{
+        flex: 0 0 200px;
+        margin: 15px;
+    }
+    .main:hover{
+        transform: scale(1.25);
+    }
+    .main img{
+        display: flex;
+        max-width: 100%;
+    }
+    .main .text{
+        padding: 0px 25px 30px;
+    }
+    .main .text > button{
+        background-color: aqua;
+        border: 1px solid red;
+        padding: 5px;
+        max-width: 100%;
+    }
+    .best{ 
+        width: 60px;
+        height: 25px;
+        border-radius: 20px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        text-align: center;
+        border: 2px solid blue;
+        align-items:center;
+        transform: rotate(-10deg);
+        background-color: aqua;
+        opacity: 0.5;
+        color:rgb(5, 9, 17);
+        font-family:sans-serif;
+        padding: 0.125vw;
+        position: fixed;  
+    }
+    .best #sell{
+        position: absolute; 
+        text-align: center;
+        top: -20px;
+        left: 7px;
+            
+    }
+    .btn {
+        float: right;
+        margin-right: 20px;
+            
+    }
+    .btn #bt {
+        font-size: 15px;
+        background-color: white;
+        border: 0ch;
+    }
+    #bt:focus{
+        transform: scale(1.5);
+        border: 1px solid red;
+        border-radius: 100%;
+        border-image: round;
+    }
+    #button {
+        background-color: orangered;
+        border-radius: 20px;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: fixed;
+        border-top: 2px solid black;
+        top: 90%;
+        height: 10%;
+        background-color: brown;
+        justify-content: space-between;
+        
+    }
+    .footer3{
+        margin-right: 50px;
+    }
+    #be{
+        position: absolute;
+        margin-bottom: 20px;
+    }
+    section{
+        height: 85%;
+    }
+    
+</style>
+<body>
+    <header>
+        <div class="head">
+            <nav class="navbar">
+                <!-- <img id="bella" src="Bella-img.jpg" alt="unable to load image" width="80px" height="50px">-->
+                <span id="bella"><em>Bella</em></span>
+                <span><a href="Ecommerce-JS-test.html" id="link">Home</a></span>
+                <span><a href="Shop-ecom.html" id="link" target="_blank">Shop</a></span>
+                <span><a href="Favorites-ecom.html" id="link" target="_blank">Favorites</a></span>
+                <span><a href="Orders-ecom.html" id="link" target="_blank">Orders</a></span>
+                <span><a href="Profile-ecom.html" id="link2" target="_blank">Profile</a></span>
+             </nav>     
+        </div>
+    </header>
+    <section>
+    <main class="card">
+        <article class="main">
+            <div class="best"><h2 id="sell">Sale</h2></div>
+            <img src="https://m.media-amazon.com/images/I/71yCPm-BJgL._AC_SR180,120_QL70_.jpg" height="100px">
+            <div class="btn"><a href="" id="al"><button id="bt" onclick="like()">&#128151</button></a></div>
+            <div class="text">
+                <h3>Hoodie</h3>
+               <!-- <p>(Unisex-Adult Cotton Hooded Neck Avenger Printed)-->
+                   <p> Price: ₹799.00   ₹<strike>1,099.00</strike></p>
+                <!--</p>-->
+                <button id="button" onclick="cart()">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="main">
+            <img src="https://m.media-amazon.com/images/I/71MaDLgHnxL._AC_UL480_FMwebp_QL65_.jpg" height="100px">
+            <div class="btn"><a href="" id="al"><button id="bt" onclick="like()">&#128151</button></a></div>
+            <div class="text">
+                <h3>Samsung Galaxy M53 5G</h3>
+              <!--  <p>(Mystique Green, 8GB RAM, 128GB Storage)-->
+                    <p>Price: ₹26,499.00</p>
+               <!-- </p> -->
+               <button id="button">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="main">
+            <img src="https://m.media-amazon.com/images/I/61cpernSJuL._AC_UL480_FMwebp_QL65_.jpg" height="100px">
+            <div class="btn"><a href="" id="al"><button id="bt" onclick="like()">&#128151</button></a></div>
+            <div class="text">
+                <h3>Apple iPhone 13 Mini</h3>
+               <!-- <p>(Starlight, A15 Bionic chip , 128GB Storage) -->
+                    <p>Price: ₹69,900.00</p>
+              <!--   </p> -->
+                <button id="button">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="main">
+            <img src="https://m.media-amazon.com/images/I/31G1NouVxaL._AC_SY200_.jpg" height="100px">
+            <div class="btn"><a href="" id="al"><button id="bt" onclick="like()">&#128151</button></a></div>
+            <div class="text">
+                <h3>pTron Earbuds</h3>
+               <!-- <p>pTron Bassbuds Duo in-Ear Earbuds with 32Hrs Total Playtime-->
+                    <p>Price: ₹6,999.00</p>
+               <!-- </p>-->
+                <button id="button">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="main">
+            <div class="best"><h2 id="sell">Sale</h2></div>
+            <img src="https://m.media-amazon.com/images/I/81mLBoKkiyL._AC_SY200_.jpg" height="100px">
+            <div class="btn"><a href="" id="al"><button id="bt" onclick="like()">&#128151</button></a></div>
+            <div class="text">  
+                <h3>Teak Wood Wall-Hanging Bar Furniture</h3>
+               <!-- <p> Wall Mounted Wine Rack | Modern Home Bar Furniture for Storage and House Parties-->
+                   <p> Price: ₹5,999.00 ₹<strike>8,000.00</strike></p>
+               <!-- </p>-->
+                <button id="button">Add to Cart</button>
+            </div>
+        </article>
+    </main>
+</section>
+    <footer>  
+        <div class="footer0">  
+          <h1>Bella</h1>  
+        </div>  
+        <div class="footer1 ">  
+          Connect with us at<div class="social-media">  
+            <a href="#">  
+              <ion-icon name="logo-facebook"></ion-icon>  
+            </a>  
+            <a href="#">  
+              <ion-icon name="logo-linkedin"></ion-icon>  
+            </a>  
+            <a href="#">  
+              <ion-icon name="logo-youtube"></ion-icon>  
+            </a>  
+            <a href="#">  
+              <ion-icon name="logo-instagram"></ion-icon>  
+            </a>  
+            <a href="#">  
+              <ion-icon name="logo-twitter"></ion-icon>  
+            </a>  
+          </div>  
+        </div>  
+          
+        <div class="footer3">Copyright © <h4 id="be">Bella</h4> 2022-2028</div>  
+      </footer>  
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>  
+      <script src="./ecommerce.js"></script>  
+
+    <script>
+        function like(){
+            var a = document.getElementById('al').innerHTML;
+            alert("product added to favorites");     
+
+        }
+        
+    </script>
+</body>
+</html>
